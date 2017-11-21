@@ -27,8 +27,10 @@ Model and Training:
 	4. final result can multiple a ratio to approach platform mean conversion ratio.
 
 ## 其他队伍分享的highlight
-rank 14th 队伍名：竟然有这些操作
+### rank 14th 队伍名：竟然有这些操作
+
 Trick特征：
+
 通过观察原始数据是不难发现的,有很多只有clickTime和label不一样的重复数据，按时间排序发现重复数据如果转化，label一般标在头或尾，少部分在中间，在训练集上出现的情况在测试集上也会出现，所以标记这些位置后onehot，让模型去学习，再就是时间差特征，关于trick我比赛分享的这篇文章有较详细的说明。比赛后期发现了几个和这个trick相类似的文章1和文章2，可以参考。
 
 统计特征：
